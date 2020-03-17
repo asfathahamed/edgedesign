@@ -1,0 +1,32 @@
+# This is a basic workflow to help you get started with Actions
+
+name: Deploy via git-ftp
+
+# Controls when the action will run. Triggers the workflow on push or pull request
+# events but only for the master branch
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  # This workflow contains a single job called "build"
+  deploy:
+    name: Deploy
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+    - uses: actions/checkout@v1
+    - name: git-ftp-action
+      uses: sebastianpopp/git-ftp-action@3.0.0
+      with:
+        # URL
+        url: ${{ secrets.FTP_URL }}
+        # FTP login name
+        user: ${{ secrets.FTP_USERNAME }}
+        # FTP password
+        password: ${{ secrets.FTP_PASS }}
