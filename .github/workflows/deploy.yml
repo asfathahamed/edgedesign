@@ -25,7 +25,7 @@ jobs:
       uses: sebastianpopp/git-ftp-action@3.0.0
       with:
         # URL
-        url: ${{ secrets.FTP_URL }}
+        url: ftps://ftp.edgedesign.co.in/public_html/dev
         # FTP login name
         user: ${{ secrets.FTP_USERNAME }}
         # FTP password
