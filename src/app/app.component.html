@@ -1,10 +1,10 @@
 <mat-toolbar color="primary">
   <mat-toolbar-row>
-    <span>Edge Design</span>
+    <a routerLink="/" class="brand"><span class="sr-only">Edge Design</span></a>
     <span class="middle-spacer"></span>
-    <button mat-button>Home</button>
-    <button mat-button>Gallery</button>
-    <button mat-button>Reach Us</button>
+    <button routerLink="/" mat-button>Home</button>
+    <button routerLink="/gallery" mat-button>Gallery</button>
+    <button routerLink="/contact" mat-button>Reach Us</button>
   </mat-toolbar-row>
 </mat-toolbar>
 <router-outlet></router-outlet>
