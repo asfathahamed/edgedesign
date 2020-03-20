@@ -1,1 +1,101 @@
-<p>home works!</p>
+<section>
+  <h2>What we do</h2>
+  <h4>We are the bridge to your dream home</h4>
+
+  <div class="we-do-cards">
+    <!-- Design -->
+    <mat-card class="we-do-card">
+      <mat-card-header>
+        <mat-card-title>Design</mat-card-title>
+        <mat-card-subtitle>Residential and Commercial buildings</mat-card-subtitle>
+      </mat-card-header>
+      <!-- <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu"> -->
+      <mat-card-content>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio deserunt, architecto ipsum reiciendis rem, officia molestiae facilis odit sit vero cum itaque, cumque autem perferendis pariatur quibusdam voluptate a amet!
+        </p>
+      </mat-card-content>
+      <mat-card-actions>
+        <button mat-raised-button color="primary">Enquire</button>
+      </mat-card-actions>
+    </mat-card>
+
+    <!-- Consultation -->
+    <mat-card class="we-do-card">
+      <mat-card-header>
+        <mat-card-title>Consultation</mat-card-title>
+        <mat-card-subtitle>Residential and Commercial buildings</mat-card-subtitle>
+      </mat-card-header>
+      <!-- <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu"> -->
+      <mat-card-content>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio deserunt, architecto ipsum reiciendis rem, officia molestiae facilis odit sit vero cum itaque, cumque autem perferendis pariatur quibusdam voluptate a amet!
+        </p>
+      </mat-card-content>
+      <mat-card-actions>
+        <button mat-raised-button color="primary">Enquire</button>
+      </mat-card-actions>
+    </mat-card>
+
+    <!-- Interior -->
+    <mat-card class="we-do-card">
+      <mat-card-header>
+        <mat-card-title>Interior</mat-card-title>
+        <mat-card-subtitle>Residential and Commercial buildings</mat-card-subtitle>
+      </mat-card-header>
+      <!-- <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu"> -->
+      <mat-card-content>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio deserunt, architecto ipsum reiciendis rem, officia molestiae facilis odit sit vero cum itaque, cumque autem perferendis pariatur quibusdam voluptate a amet!
+        </p>
+      </mat-card-content>
+      <mat-card-actions>
+        <button mat-raised-button color="primary">Enquire</button>
+      </mat-card-actions>
+    </mat-card>
+
+    <!-- Construction -->
+    <mat-card class="we-do-card">
+      <mat-card-header>
+        <mat-card-title>Construction</mat-card-title>
+        <mat-card-subtitle>Highclass building in affordable prices</mat-card-subtitle>
+      </mat-card-header>
+      <!-- <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu"> -->
+      <mat-card-content>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio deserunt, architecto ipsum reiciendis rem, officia molestiae facilis odit sit vero cum itaque, cumque autem perferendis pariatur quibusdam voluptate a amet!
+        </p>
+      </mat-card-content>
+      <mat-card-actions>
+        <button mat-raised-button color="primary">Enquire</button>
+      </mat-card-actions>
+    </mat-card>
+  </div>
+</section>
+<section><h2>Portfolio</h2></section>
+<!-- Add the timeline -->
+<vertical-timeline>
+
+  <!-- Add some cards to the timeline. It works with *ngFor too -->
+
+  <!-- If no value is passed for the date, the current time is used. -->
+  <vertical-timeline-card>
+    <h1>A boom in Design</h1>
+  </vertical-timeline-card>
+
+  <!-- If no value is passed for the date, the current time is used. -->
+  <vertical-timeline-card>
+   <h1>First Interior</h1>
+  </vertical-timeline-card>
+
+  <!-- tomorrow = new Date(2017, 9, 20, 14,34); -->
+  <vertical-timeline-card [dateValue]="tomorrow">
+    <h1>First Client</h1>
+  </vertical-timeline-card>
+
+  <!-- tomorrow = new Date(2017, 9, 20, 14,34); -->
+  <vertical-timeline-card [dateValue]="tomorrow">
+    <h1>Company Started</h1>
+  </vertical-timeline-card>
+
+</vertical-timeline>
