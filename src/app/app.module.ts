@@ -8,7 +8,7 @@ import { SharedMaterialModule } from './shared/shared-material.module';
 import { VerticalTimelineModule } from 'angular-vertical-timeline';
 
 import { AppComponent } from './app.component';
-import { HomeComponent } from './home/home.component';
+import { HomeNewComponent } from './home-new/home-new.component';
 import { GalleryComponent } from './gallery/gallery.component';
 import { ContactComponent } from './contact/contact.component';
 import { ArchitectureComponent } from './architecture/architecture.component';
@@ -18,7 +18,7 @@ import { DesignComponent } from './design/design.component';
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent,
+    HomeNewComponent,
     GalleryComponent,
     ContactComponent,
     ArchitectureComponent,

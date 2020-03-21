@@ -16,3 +16,22 @@
 .full-width {
   width: 100%;
 }
+
+.clearfix {
+  &:before, &:after {
+    content: "";
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+/* Grid */
+.col-1by2 {
+  width: 50%;
+}
+
+img {
+  max-width: 100%;
+}

@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { HomeComponent } from './home/home.component';
+import { HomeNewComponent } from './home-new/home-new.component';
 import { GalleryComponent } from './gallery/gallery.component';
 import { ContactComponent } from './contact/contact.component';
 import { ArchitectureComponent } from './architecture/architecture.component';
@@ -10,7 +10,7 @@ import { DesignComponent } from './design/design.component';
 
 const routes: Routes = [{
   path: '',
-  component: HomeComponent
+  component: HomeNewComponent
 }, {
   path: 'gallery',
   component: GalleryComponent
