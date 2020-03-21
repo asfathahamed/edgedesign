@@ -3,6 +3,9 @@ import { Routes, RouterModule } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { GalleryComponent } from './gallery/gallery.component';
 import { ContactComponent } from './contact/contact.component';
+import { ArchitectureComponent } from './architecture/architecture.component';
+import { InteriorComponent } from './interior/interior.component';
+import { DesignComponent } from './design/design.component';
 
 
 const routes: Routes = [{
@@ -11,6 +14,15 @@ const routes: Routes = [{
 }, {
   path: 'gallery',
   component: GalleryComponent
+}, {
+  path: 'architecture',
+  component: ArchitectureComponent
+}, {
+  path: 'interior',
+  component: InteriorComponent
+}, {
+  path: 'design',
+  component: DesignComponent
 }, {
   path: 'contact',
   component: ContactComponent

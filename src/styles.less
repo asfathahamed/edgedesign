@@ -6,9 +6,15 @@ html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
 .brand {
-  background-image: url('./assets/images/edge-design-logo.png');
-  background-position: -8px -4px;
+  background-image: url('./assets/images/strong-frames.webp');
+  background-size: cover;
   display: inline-block;
   height: 52px;
-  width: 105px;
+  width: 154px;
+}
+
+@toolbar-bg: #ececec;
+.sf-toolbar {
+  background-color: @toolbar-bg;
+  border-bottom: 1px solid darken(@toolbar-bg, 5%);
 }

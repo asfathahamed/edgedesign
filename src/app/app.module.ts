@@ -11,13 +11,19 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { GalleryComponent } from './gallery/gallery.component';
 import { ContactComponent } from './contact/contact.component';
+import { ArchitectureComponent } from './architecture/architecture.component';
+import { InteriorComponent } from './interior/interior.component';
+import { DesignComponent } from './design/design.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     GalleryComponent,
-    ContactComponent
+    ContactComponent,
+    ArchitectureComponent,
+    InteriorComponent,
+    DesignComponent
   ],
   imports: [
     BrowserModule,
