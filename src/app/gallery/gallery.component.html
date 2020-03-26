@@ -1,27 +1,8 @@
 
 <!-- Add the timeline -->
 <vertical-timeline>
-
-  <!-- Add some cards to the timeline. It works with *ngFor too -->
-
-  <!-- If no value is passed for the date, the current time is used. -->
-  <vertical-timeline-card>
-    <h1>A boom in Design</h1>
+  <vertical-timeline-card *ngFor="let item of timelineData" [dateValue]="item.timestamp">
+    <h1>{{item.title}}</h1>
+    <img [src]="item.image" [alt]="item.title">
   </vertical-timeline-card>
-
-  <!-- If no value is passed for the date, the current time is used. -->
-  <vertical-timeline-card>
-   <h1>First Interior</h1>
-  </vertical-timeline-card>
-
-  <!-- tomorrow = new Date(2017, 9, 20, 14,34); -->
-  <vertical-timeline-card [dateValue]="tomorrow">
-    <h1>First Client</h1>
-  </vertical-timeline-card>
-
-  <!-- tomorrow = new Date(2017, 9, 20, 14,34); -->
-  <vertical-timeline-card [dateValue]="tomorrow">
-    <h1>Company Started</h1>
-  </vertical-timeline-card>
-
 </vertical-timeline>

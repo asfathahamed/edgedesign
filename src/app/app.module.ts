@@ -14,6 +14,7 @@ import { ContactComponent } from './contact/contact.component';
 import { ArchitectureComponent } from './architecture/architecture.component';
 import { InteriorComponent } from './interior/interior.component';
 import { DesignComponent } from './design/design.component';
+import { CubeComponent } from './cube/cube.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { DesignComponent } from './design/design.component';
     ContactComponent,
     ArchitectureComponent,
     InteriorComponent,
-    DesignComponent
+    DesignComponent,
+    CubeComponent
   ],
   imports: [
     BrowserModule,
